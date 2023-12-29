@@ -1,38 +1,268 @@
-.App {
+.logo {
+  width: 400px;
+  height: 40px;
+  margin: 10px auto;
+}
+
+.cart {
+  color: white;
+  font-size: 20px;
+}
+
+.navs {
+  /* background-color: #000;   */
+  color: white;
+  font-weight: bold;
+  size: 1.5rem;
+}
+.navBar {
+  background-color: rgb(1, 0, 23);
+  opacity: 80%;
+}
+.navBarLogo {
+  z-index: -1;
+  width: 100px;
+  height: 20px;
+}
+
+.profileImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.cartImage {
+  width: 40px;
+  height: 40px;
+  margin-left: 5%;
+}
+
+.cartItemsLength {
+  position: absolute;
+  top: 25px;
+  color: #000;
+  flex: auto;
+  right: 130px;
+  /* justify-items: center; */
+  /* left:  5px; */
+  /* w-6 top-2.5 left-1 text-white text-sm flex items-center justify-center font-semibold */
+}
+.footer {
+  background-color: rgb(2, 0, 36);
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 3%;
+}
+.footerHeadings {
+  color: white;
+}
+.smIcons:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.smIcons {
+  font-size: 20px;
+  color: gray;
+  padding: 4%;
+}
+.smIcons a {
+  font-size: 20px;
+  padding: 0 5px;
+}
+
+.pIcons {
+  display: flex;
+  padding: 12px auto;
+}
+
+.shopHeader h1 {
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.oldPrice {
+  color: gray;
+  text-decoration: line-through;
+}
+.newPrice {
+  font-size: 2rem;
+  color: black;
+  font-weight: 800;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sale {
+  background-color: black;
+  color: aliceblue;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.productList {
+  position: relative;
+}
+
+.productImage {
+  width: 100%;
+  height: 200px;
+}
+
+.productDetails {
+  text-align: center;
+}
+.gImg {
+  height: 100px;
+  background-size: cover;
+}
+
+.cardItem {
+  width: 100%;
+  height: 250px;
+}
+.cardItemCloseButton {
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.blog {
+  text-align: center;
+}
+
+.loginLogos {
+  width: 100px;
+  height: 100px;
+}
+
+.table {
+  text-align: center;
+}
+
+/* heroSection */
+video {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+}
+
+.hero-container {
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-container-heading {
+  font-size: 70px;
+  color: hsl(0, 0%, 100%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.hero-container > p {
+  font-size: 32px;
+  color: #fff;
+  margin-top: 8px;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+}
+
+.hero-time {
+  font-size: 75px;
+  color: #fff;
+  margin-top: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  opacity: 60%;
+}
+
+.hero-btns {
+  margin-top: 32px;
+}
+
+.notification {
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 1;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  background: rgb(3, 0, 82);
+  position: fixed;
+  text-align: center;
+  align-self: stretch;
+  padding: 5px;
+  margin-top: 40%;
+}
+
+.notification:hover {
+  background-color: #87f166;
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 960px) {
+  .hero-container-heading {
+    font-size: 50px;
+    margin-top: 45px;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media screen and (max-width: 768px) {
+  .hero-container-heading {
+    font-size: 30px;
+    margin-top: 15%;
   }
+
+  .hero-container > p {
+    font-size: 20px;
+  }
+
+  .btn-mobile {
+    display: block;
+    text-decoration: none;
+  }
+  .hero-time {
+    font-size: 25px;
+    color: white;
+  }
+
+  .btn {
+    width: 100%;
+  }
+  .hero-time {
+    padding-bottom: 25px;
+  }
+  .notification {
+    /* display: none; */
+  }
+}
+
+.offers {
+  background: white;
+  padding: 0 auto;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  height: 500px;
+}
+.offerImg {
+  margin: 5% 0;
+  height: 300px;
+  width: 100%;
+}
+
+.bannerImages{
+  width: 100%;
 }
